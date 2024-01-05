@@ -32,14 +32,16 @@ body {
     height: 500px;
     background-color: white;
     padding: 1rem 1rem 0rem 1rem;
+    border: 1px solid rgb(0, 0, 0, .9);
     border-radius: 1.5rem;
-    box-shadow: 10px 5px rgb(0, 0, 7);
+    box-shadow: 9px 8px rgb(0, 0, 7);
 }
 
 .wrapper img {
     width: 100%;
     display: var(--display-img);
     border-radius: .5rem;
+    object-fit: cover;
 }
 
 span {
@@ -58,9 +60,14 @@ span {
     font-size: .9em;
 }
 
-main h1 {
+.title {
     font-size: 1.5em;
     font-weight: var(--fw-800);
+}
+
+.title:hover {
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 .main__text {
@@ -80,6 +87,7 @@ main h1 {
     display: flex;
     align-items: center;
     gap: 1em;
+    margin-top: 1.5em;
 }
 
 .footer p {
